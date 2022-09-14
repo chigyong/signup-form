@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(../images/bg-intro-mobile.png);
+  background-position: center;
+  background-color: hsl(0deg, 100%, 74%);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component {
+  width: 100%;
+}
+.component .left {
+  text-align: center;
+}
+.component .left h1 {
+  color: white;
+}
+.component .left p {
+  color: white;
+}
+.component .right .announcement {
+  background-color: hsl(248deg, 32%, 49%);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+.component .right .announcement span {
+  font-weight: 600;
+}
+.component .right .card {
+  background-color: white;
+  border-radius: 10px;
+}
+.component .right .card input {
+  padding: 5px 80px 5px 5px;
+  margin: 10px 5px 5px 25px;
+}
+.component .right .card button {
+  padding: 5px 60px 5px 60px;
+  margin: 10px 5px 5px 25px;
+  background-color: hsl(154deg, 59%, 51%);
+  border: none;
+}
+.component .right .card p {
+  font-size: 15px;
+  text-align: center;
+}
+.component .right .card p a {
+  text-decoration: none;
+  color: red;
+}
+
+@media only screen and (min-width: 1440px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15rem 5rem 5rem 5rem;
+  }
+  .component {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .component .left {
+    margin: 5rem;
+  }
+  .component .right {
+    width: 80%;
+  }
+  .component .right .card input {
+    padding: 5px 322px 5px 0;
+  }
+  .component .right .card button {
+    padding: 5px 195px 5px 162px;
+  }
+  .component .right .card p {
+    font-size: 10px;
+    color: hsl(246deg, 25%, 77%);
+  }
+}/*# sourceMappingURL=style.css.map */
